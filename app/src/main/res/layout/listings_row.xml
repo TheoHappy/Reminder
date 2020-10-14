@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:id="@+id/toplayout"
+    >
+
+    <TextView
+        android:textSize="17sp"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/event"
+        android:text=""
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingEnd="10dp"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:gravity="left"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:alpha=".7"
+            android:background="@drawable/ic_alarm_white_24dp"
+            card_view:layout_constraintEnd_toStartOf="@+id/time_and_date" />
+
+        <TextView
+            android:id="@+id/time_and_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha=".8"
+            android:padding="10dp"
+            android:text="Example of text"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="bold|italic"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
